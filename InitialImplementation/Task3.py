@@ -2,7 +2,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.express as px
-from InitialImplementation.app import app
+from InitialImplementation.app import app3
 from InitialImplementation.helpers import *
 import dash_table
 
@@ -86,7 +86,7 @@ rank_layout = html.Div([
 
 
 
-@app.callback(
+@app3.callback(
     Output(PREFIX+"graph", "figure"), 
     Output(PREFIX+"table", "columns"), 
     Output(PREFIX+"table", "data"), 
