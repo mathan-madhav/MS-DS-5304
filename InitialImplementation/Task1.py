@@ -6,7 +6,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_table
 import pandas as pd
-from InitialImplementation.app import app
+from InitialImplementation.app import app1
 from InitialImplementation.helpers import *
 
 work_df = data.copy()
@@ -110,7 +110,7 @@ yearly_layout = html.Div([
         
         
     
-@app.callback(
+@app1.callback(
     Output(PREFIX+'graph', 'figure'),
     Output(PREFIX+'table', 'columns'),
     Output(PREFIX+'table', 'data'),
