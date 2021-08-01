@@ -6,7 +6,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_table
-from InitialImplementation.app import app
+from InitialImplementation.app import app2
 from InitialImplementation.helpers import *
 
 
@@ -88,7 +88,7 @@ map_layout = html.Div([
 
 
 
-@app.callback(
+@app2.callback(
     Output(PREFIX+'geo-map', 'figure'),
     Output(PREFIX+'map-table', 'columns'),
     Output(PREFIX+'map-table', 'data'),
